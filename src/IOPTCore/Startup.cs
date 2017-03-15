@@ -46,8 +46,8 @@ namespace IOPTCore
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "Logging/logger.txt"));
-            var logger = loggerFactory.CreateLogger("FileLogger");
+            //loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "Logging/logger.txt"));
+            //var logger = loggerFactory.CreateLogger("FileLogger");
 
             if (env.IsDevelopment())
             {
@@ -69,9 +69,9 @@ namespace IOPTCore
             });
             app.UseMvc(routes =>
             {
-                routes.MapRoute("Model", "Model/{*route}", new { controller = "RESTful", action = "Model" });
+                routes.MapRoute("Model", "snapshot/{*route}", new { controller = "RESTful", action = "Model" });
                 routes.MapRoute("Main", "Main", new { controller = "Home", action = "Index" });
-                routes.MapRoute("Login", "Login", new { controller = "Home", action = "Login" });
+                routes.MapRoute("Login", "login", new { controller = "Home", action = "Login" });
                 routes.MapRoute("Logout", "Logout", new { controller = "Home", action = "Logout" });
                 routes.MapRoute("default", "", new { controller = "Home", action = "Login" });
                 //routes.MapRoute("ModelEdit", "View/{*slugs}", new { controller = "ModelEdit", action = "GetView" });

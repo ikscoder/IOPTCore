@@ -43,7 +43,7 @@ namespace IOPTCore.Models
 
         public HashSet<Dashboard> dashboards { get; } = new HashSet<Dashboard>();
 
-        public DateTimeOffset lastUpdate { get; set; }
+        public string lastUpdate { get; set; }
     }
 
     public class Model : IoT

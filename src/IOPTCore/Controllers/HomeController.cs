@@ -16,12 +16,11 @@ namespace IOPTCore.Controllers
 {
     public class HomeController : Controller
     {
-        ILoggerFactory _loggerFactory;
+        //ILoggerFactory _loggerFactory;
         DataContext db;
-        public HomeController(ILoggerFactory loggerFactory, DataContext context)
+        public HomeController(DataContext context)
         {
             db = context;
-            _loggerFactory = loggerFactory;
         }
         public IActionResult Index()
         {
@@ -40,7 +39,7 @@ namespace IOPTCore.Controllers
         {
             //if (ModelState.IsValid)
             //{
-            _loggerFactory.CreateLogger("logger").LogInformation(login+" "+password);
+            //_loggerFactory.CreateLogger("logger").LogInformation(login+" "+password);
             User user = db.Users.FirstOrDefault(u => u.login == login && u.password == password);
             if (user != null)
             {

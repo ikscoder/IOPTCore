@@ -18,7 +18,7 @@ namespace IOPTCore.Controllers
             return View();
         }
         [HttpGet]
-        [Authorize]
+       // [Authorize]
         public IActionResult Model(string route)
         {
             if (string.IsNullOrEmpty(route))
@@ -105,25 +105,25 @@ namespace IOPTCore.Controllers
             return View();
         }
 
-        [HttpPut("Model/")]
-        [Authorize]
+        [HttpPut("snapshot/")]
+        //[Authorize]
         public IActionResult Model( [FromBody]Snapshot json)
         {
             //if (string.IsNullOrEmpty(slugs)||string.IsNullOrWhiteSpace(slugs.Replace('/',' ')))
             //{
                 try
                 {
-                    if (Snapshot.current.lastUpdate > json.lastUpdate) return BadRequest();
+                    //if (Snapshot.current.lastUpdate > json.lastUpdate) return BadRequest();
                     Snapshot.current = json;
                     //ViewData["serialized"] = "<br>" + sh.LastUpdate + "<br>" + sh.Models;
                     return Ok();
                 }
-                catch { return NotFound(); }
+                catch (Exception e){ ViewData["serialized"] = e.Message; return View(); }
             //}
             //return BadRequest();
         }
-        [HttpPatch("Model/{MName}/{OName}/{PName}/")]
-        [Authorize]
+        [HttpPost("snapshot/{MName}/{OName}/{PName}/")]
+       // [Authorize]
         public IActionResult Model(string MName, string OName, string PName, [FromBody]Property json)
         {
             if (!string.IsNullOrEmpty(PName) || !string.IsNullOrWhiteSpace(PName.Replace('/', ' ')))
@@ -131,7 +131,7 @@ namespace IOPTCore.Controllers
                 try
                 {
                     var prop = (from p in (from o in (from m in Snapshot.current.models where m.pathUnit == MName select m).First().objects where o.pathUnit == OName select o).First().properties where p.pathUnit == PName select p).First();
-                    if (!prop.GenerateId(prop.pathUnit).Equals(json.pathUnit)) { return BadRequest(); }
+                    //if (!prop.GenerateId(prop.pathUnit).Equals(json.pathUnit)) { return BadRequest(); }
                     prop.value = json.value;
                     if (!prop.value.Equals(json.value)) return NoContent();
                     return Ok();
