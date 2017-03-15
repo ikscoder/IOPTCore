@@ -1,0 +1,2237 @@
+Compiling query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+Optimized query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Model> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+        FROM "Models" AS "m"
+    , 
+    shaper: BufferedEntityShaper<Model>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+FROM "Models" AS "m"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+Optimized query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Object> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+        FROM "Objects" AS "o"
+    , 
+    shaper: UnbufferedEntityShaper<Object>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+FROM "Objects" AS "o"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+Optimized query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Property> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+        FROM "Properties" AS "p"
+    , 
+    shaper: UnbufferedEntityShaper<Property>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+FROM "Properties" AS "p"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+Optimized query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Script> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+        FROM "Scripts" AS "s"
+    , 
+    shaper: UnbufferedEntityShaper<Script>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+User profile is available. Using 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting starting
+Hosting started
+Connection id "0HL3ACBNE4US0" started.
+Connection id "0HL3ACBNE4US1" started.
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/  
+Request starting HTTP/1.1 DEBUG http://192.168.1.102:1025/  0
+The request path / does not match a supported file type
+Connection id "0HL3ACBNE4US0" completed keep alive response.
+Request finished in 132.6643ms 200 
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+Reading data from file 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys\key-69e4b45a-2c77-42eb-8b74-309af87bc520.xml'.
+Found key {69e4b45a-2c77-42eb-8b74-309af87bc520}.
+Considering key {69e4b45a-2c77-42eb-8b74-309af87bc520} with expiration date 2017-06-06 10:25:42Z as default key.
+Decrypting secret element using Windows DPAPI.
+Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+Using key {69e4b45a-2c77-42eb-8b74-309af87bc520} as the default key.
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '313f370b-923b-4834-84c9-3131705a41d8' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Login' in controller 'Home'.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' started.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' completed in 521.8339ms.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' completed in 6316.6621ms.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' started.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' completed in 9.1743ms.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' completed in 9655.24ms.
+Request starting HTTP/1.1 GET http://37.193.134.174/  
+The request path / does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '313f370b-923b-4834-84c9-3131705a41d8' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+An antiforgery cookie token was reused.
+View lookup cache miss for view '_Empty' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+View lookup cache miss for view '_Empty' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 79.6094ms.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 2797.2905ms.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 3808.9552ms
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 20605.2488ms
+Connection id "0HL3ACBNE4US1" completed keep alive response.
+Request finished in 21357.136ms 200 text/html; charset=utf-8
+Connection id "0HL3ACBNE4US0" completed keep alive response.
+Request finished in 3826.2192ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/  
+The request path / does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '313f370b-923b-4834-84c9-3131705a41d8' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 9.3562ms
+Connection id "0HL3ACBNE4US0" completed keep alive response.
+Request finished in 21.1352ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/css/materialize.min.css  
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/js/materialize.min.js  
+The file /css/materialize.min.css was not modified
+The file /js/materialize.min.js was not modified
+Handled. Status code: 304 File: /css/materialize.min.css
+Handled. Status code: 304 File: /js/materialize.min.js
+Connection id "0HL3ACBNE4US1" completed keep alive response.
+Request finished in 29.6373ms 304 text/css
+Connection id "0HL3ACBNE4US0" completed keep alive response.
+Request finished in 18.5213ms 304 application/javascript
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/js/site.js  
+The file /js/site.js was not modified
+Handled. Status code: 304 File: /js/site.js
+Connection id "0HL3ACBNE4US0" completed keep alive response.
+Request finished in 2.8481ms 304 application/javascript
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/x-www-form-urlencoded 256
+POST requests are not supported
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Antiforgery successfully validated a request.
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (iks, 123) - ModelState is Valid
+iks 123
+Compiling query model: 
+'(from User u in DbSet<User>
+where u.login == __login_0 && u.password == __password_1
+select u)
+.FirstOrDefault()'
+Optimized query model: 
+'(from User u in DbSet<User>
+where u.login == __login_0 && u.password == __password_1
+select u)
+.FirstOrDefault()'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<User> _ToSequence(
+    element: User FirstOrDefault(
+        source: IEnumerable<User> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT "u"."id", "u"."login", "u"."password"
+                FROM "Users" AS "u"
+                WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+                LIMIT 1
+            , 
+            shaper: UnbufferedEntityShaper<User>
+        )
+    )
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (18ms) [Parameters=[@__login_0='?', @__password_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+AuthenticationScheme: session signed in.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+Executing RedirectResult, redirecting to /Main.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 433.6981ms
+Connection id "0HL3ACBNE4US1" completed keep alive response.
+Request finished in 443.3637ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/Main  
+The request path /Main does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Main' and template 'Main'.
+Executing action IOPTCore.Controllers.HomeController.Index (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Index (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Index (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Index' in controller 'Home'.
+Code generation for the Razor file at '/Views/Home/Index.cshtml' started.
+Code generation for the Razor file at '/Views/Home/Index.cshtml' completed in 78.5672ms.
+Compilation of the generated code for the Razor file at '/Views/Home/Index.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Home/Index.cshtml' completed in 9892.1999ms.
+The view 'Index' was found.
+Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+View lookup cache miss for view '_Layout' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Layout.cshtml' started.
+Code generation for the Razor file at '/Views/Shared/_Layout.cshtml' completed in 38.3936ms.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Layout.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Layout.cshtml' completed in 9620.7694ms.
+Executed action IOPTCore.Controllers.HomeController.Index (IOPTCore) in 19921.7868ms
+Connection id "0HL3ACBNE4US0" completed keep alive response.
+Request finished in 19926.7969ms 200 text/html; charset=utf-8
+Connection id "0HL3ACBNE4US1" received FIN.
+Connection id "0HL3ACBNE4US1" disconnecting.
+Connection id "0HL3ACBNE4US1" sending FIN.
+Connection id "0HL3ACBNE4US1" sent FIN with status "0".
+Connection id "0HL3ACBNE4US1" stopped.
+Compiling query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+Optimized query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Model> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+        FROM "Models" AS "m"
+    , 
+    shaper: BufferedEntityShaper<Model>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+FROM "Models" AS "m"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+Optimized query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Object> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+        FROM "Objects" AS "o"
+    , 
+    shaper: UnbufferedEntityShaper<Object>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+FROM "Objects" AS "o"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+Optimized query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Property> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+        FROM "Properties" AS "p"
+    , 
+    shaper: UnbufferedEntityShaper<Property>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+FROM "Properties" AS "p"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+Optimized query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Script> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+        FROM "Scripts" AS "s"
+    , 
+    shaper: UnbufferedEntityShaper<Script>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+User profile is available. Using 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting starting
+Hosting started
+Connection id "0HL3ACEA647U2" started.
+Connection id "0HL3ACEA647U3" started.
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/  
+Request starting HTTP/1.1 DEBUG http://192.168.1.102:1025/  0
+The request path / does not match a supported file type
+Connection id "0HL3ACEA647U3" completed keep alive response.
+Request finished in 187.5028ms 200 
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+Reading data from file 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys\key-69e4b45a-2c77-42eb-8b74-309af87bc520.xml'.
+Found key {69e4b45a-2c77-42eb-8b74-309af87bc520}.
+Considering key {69e4b45a-2c77-42eb-8b74-309af87bc520} with expiration date 2017-06-06 10:25:42Z as default key.
+Decrypting secret element using Windows DPAPI.
+Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+Using key {69e4b45a-2c77-42eb-8b74-309af87bc520} as the default key.
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '043c4e18-4f63-422b-9b44-9063b7447174' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Login' in controller 'Home'.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' started.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' completed in 466.5615ms.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' completed in 21092.1694ms.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' started.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' completed in 8.2249ms.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' completed in 8262.8309ms.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache miss for view '_Empty' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 83.1392ms.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 2586.1611ms.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 33621.945ms
+Connection id "0HL3ACEA647U2" completed keep alive response.
+Request finished in 34444.4181ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://192.168.1.102:1025/Login application/x-www-form-urlencoded 256
+POST requests are not supported
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Antiforgery successfully validated a request.
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (iks, 123) - ModelState is Valid
+iks 123
+Compiling query model: 
+'(from User u in DbSet<User>
+where u.login == __login_0 && u.password == __password_1
+select u)
+.FirstOrDefault()'
+Optimized query model: 
+'(from User u in DbSet<User>
+where u.login == __login_0 && u.password == __password_1
+select u)
+.FirstOrDefault()'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<User> _ToSequence(
+    element: User FirstOrDefault(
+        source: IEnumerable<User> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT "u"."id", "u"."login", "u"."password"
+                FROM "Users" AS "u"
+                WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+                LIMIT 1
+            , 
+            shaper: UnbufferedEntityShaper<User>
+        )
+    )
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (16ms) [Parameters=[@__login_0='?', @__password_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+AuthenticationScheme: session signed in.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+Executing RedirectResult, redirecting to /Main.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 436.5929ms
+Connection id "0HL3ACEA647U3" completed keep alive response.
+Request finished in 457.9559ms 302 
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/Main  
+The request path /Main does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Main' and template 'Main'.
+Executing action IOPTCore.Controllers.HomeController.Index (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Index (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Index (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Index' in controller 'Home'.
+Code generation for the Razor file at '/Views/Home/Index.cshtml' started.
+Code generation for the Razor file at '/Views/Home/Index.cshtml' completed in 80.0157ms.
+Compilation of the generated code for the Razor file at '/Views/Home/Index.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Home/Index.cshtml' completed in 9745.7402ms.
+The view 'Index' was found.
+Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+View lookup cache miss for view '_Layout' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Layout.cshtml' started.
+Code generation for the Razor file at '/Views/Shared/_Layout.cshtml' completed in 30.2349ms.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Layout.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Layout.cshtml' completed in 2339.28ms.
+Executed action IOPTCore.Controllers.HomeController.Index (IOPTCore) in 12485.6296ms
+Connection id "0HL3ACEA647U2" completed keep alive response.
+Request finished in 12491.374ms 200 text/html; charset=utf-8
+Connection id "0HL3ACEA647U3" received FIN.
+Connection id "0HL3ACEA647U4" started.
+Connection id "0HL3ACEA647U2" received FIN.
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/json 32
+Connection id "0HL3ACEA647U3" disconnecting.
+Connection id "0HL3ACEA647U2" disconnecting.
+Connection id "0HL3ACEA647U3" sending FIN.
+Connection id "0HL3ACEA647U2" sending FIN.
+Connection id "0HL3ACEA647U2" sent FIN with status "0".
+Connection id "0HL3ACEA647U3" sent FIN with status "0".
+Connection id "0HL3ACEA647U2" stopped.
+Connection id "0HL3ACEA647U3" stopped.
+An unhandled exception has occurred while executing the request
+Connection id "0HL3ACEA647U4" completed keep alive response.
+Request finished in 308.7796ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/json 32
+POST requests are not supported
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.ATabppQSrnY" is not present.
+Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+Executing HttpStatusCodeResult, setting HTTP status code 400
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 65.2332ms
+Connection id "0HL3ACEA647U4" completed keep alive response.
+Request finished in 68.9169ms 400 
+Compiling query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+Optimized query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Model> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+        FROM "Models" AS "m"
+    , 
+    shaper: BufferedEntityShaper<Model>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+FROM "Models" AS "m"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+Optimized query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Object> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+        FROM "Objects" AS "o"
+    , 
+    shaper: UnbufferedEntityShaper<Object>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+FROM "Objects" AS "o"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+Optimized query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Property> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+        FROM "Properties" AS "p"
+    , 
+    shaper: UnbufferedEntityShaper<Property>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+FROM "Properties" AS "p"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+Optimized query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Script> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+        FROM "Scripts" AS "s"
+    , 
+    shaper: UnbufferedEntityShaper<Script>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+User profile is available. Using 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting starting
+Hosting started
+Connection id "0HL3ACH1GPMI1" started.
+Connection id "0HL3ACH1GPMI0" started.
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/  
+Request starting HTTP/1.1 DEBUG http://192.168.1.102:1025/  0
+The request path / does not match a supported file type
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 144.5445ms 200 
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+Reading data from file 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys\key-69e4b45a-2c77-42eb-8b74-309af87bc520.xml'.
+Found key {69e4b45a-2c77-42eb-8b74-309af87bc520}.
+Considering key {69e4b45a-2c77-42eb-8b74-309af87bc520} with expiration date 2017-06-06 10:25:42Z as default key.
+Decrypting secret element using Windows DPAPI.
+Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+Using key {69e4b45a-2c77-42eb-8b74-309af87bc520} as the default key.
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '9925c1f6-25fa-4a2b-955e-8bec7f73e576' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Login' in controller 'Home'.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' started.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' completed in 487.541ms.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' completed in 21091.317ms.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' started.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' completed in 13.6012ms.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' completed in 2019.4427ms.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache miss for view '_Empty' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 82.6624ms.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 2525.7159ms.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 27351.5293ms
+Connection id "0HL3ACH1GPMI1" completed keep alive response.
+Request finished in 28093.993ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/json 32
+POST requests are not supported
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (, ) - ModelState is Valid
+ 
+Compiling query model: 
+'(from User u in DbSet<User>
+where u.login == __login_0 && u.password == __password_1
+select u)
+.FirstOrDefault()'
+Optimized query model: 
+'(from User u in DbSet<User>
+where u.login == __login_0 && u.password == __password_1
+select u)
+.FirstOrDefault()'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<User> _ToSequence(
+    element: User FirstOrDefault(
+        source: IEnumerable<User> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT "u"."id", "u"."login", "u"."password"
+                FROM "Users" AS "u"
+                WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+                LIMIT 1
+            , 
+            shaper: UnbufferedEntityShaper<User>
+        )
+    )
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE "u"."login" IS NULL AND "u"."password" IS NULL
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+A new antiforgery cookie token was created.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 259.7746ms
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 275.9138ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Login  
+The request path /Login does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Login' and template 'Login'.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '9925c1f6-25fa-4a2b-955e-8bec7f73e576' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 6.4889ms
+Connection id "0HL3ACH1GPMI1" completed keep alive response.
+Request finished in 17.7631ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Login  
+The request path /Login does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Login' and template 'Login'.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '9925c1f6-25fa-4a2b-955e-8bec7f73e576' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 6.9704ms
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 21.4791ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 PATCH http://37.193.134.174/Model/TestModel/TestObject/LED application/json 254
+PATCH requests are not supported
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization failed for user: (null).
+Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Executing ChallengeResult with authentication schemes ().
+AuthenticationScheme: session was challenged.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 40.9904ms
+Connection id "0HL3ACH1GPMI1" completed keep alive response.
+Request finished in 58.6061ms 302 
+Request starting HTTP/1.1 PATCH http://37.193.134.174/?ReturnUrl=%2FModel%2FTestModel%2FTestObject%2FLED application/json 254
+PATCH requests are not supported
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '9925c1f6-25fa-4a2b-955e-8bec7f73e576' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+A new antiforgery cookie token was created.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 6.1871ms
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 9.9865ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/Model/TestModel/TestObject/LED  
+The request path /Model/TestModel/TestObject/LED does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '9e86958e-df80-4e66-a073-aed94546279a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization was successful for user: iks.
+Executing action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore) with arguments (TestModel/TestObject/LED) - ModelState is Valid
+Executed action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Model' in controller 'RESTful'.
+Code generation for the Razor file at '/Views/RESTful/Model.cshtml' started.
+Code generation for the Razor file at '/Views/RESTful/Model.cshtml' completed in 20.4387ms.
+Compilation of the generated code for the Razor file at '/Views/RESTful/Model.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/RESTful/Model.cshtml' completed in 9773.9611ms.
+The view 'Model' was found.
+Executing ViewResult, running view at path /Views/RESTful/Model.cshtml.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 10051.3166ms
+Connection id "0HL3ACH1GPMI1" completed keep alive response.
+Request finished in 10060.406ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/Model/TestModel/TestObject/ButtonState  
+The request path /Model/TestModel/TestObject/ButtonState does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '9e86958e-df80-4e66-a073-aed94546279a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization was successful for user: iks.
+Executing action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore) with arguments (TestModel/TestObject/ButtonState) - ModelState is Valid
+Executed action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Model' in controller 'RESTful'.
+The view 'Model' was found.
+Executing ViewResult, running view at path /Views/RESTful/Model.cshtml.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 4.4642ms
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 18.8847ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 PATCH http://37.193.134.174/Model/TestModel/TestObject/ButtonState application/json 107
+PATCH requests are not supported
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization failed for user: (null).
+Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Executing ChallengeResult with authentication schemes ().
+AuthenticationScheme: session was challenged.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 2.0606ms
+Connection id "0HL3ACH1GPMI1" completed keep alive response.
+Request finished in 5.3837ms 302 
+Request starting HTTP/1.1 PATCH http://37.193.134.174/?ReturnUrl=%2FModel%2FTestModel%2FTestObject%2FButtonState application/json 107
+PATCH requests are not supported
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '9925c1f6-25fa-4a2b-955e-8bec7f73e576' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 4.864ms
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 8.3961ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/Model/TestModel/TestObject/ButtonState  
+The request path /Model/TestModel/TestObject/ButtonState does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '9e86958e-df80-4e66-a073-aed94546279a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization was successful for user: iks.
+Executing action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore) with arguments (TestModel/TestObject/ButtonState) - ModelState is Valid
+Executed action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Model' in controller 'RESTful'.
+The view 'Model' was found.
+Executing ViewResult, running view at path /Views/RESTful/Model.cshtml.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 3.5325ms
+Connection id "0HL3ACH1GPMI1" completed keep alive response.
+Request finished in 10.9061ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 PATCH http://37.193.134.174/Model/TestModel/TestObject/ButtonState application/json 107
+PATCH requests are not supported
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization failed for user: (null).
+Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Executing ChallengeResult with authentication schemes ().
+AuthenticationScheme: session was challenged.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 2.0266ms
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 5.2466ms 302 
+Request starting HTTP/1.1 PATCH http://37.193.134.174/?ReturnUrl=%2FModel%2FTestModel%2FTestObject%2FButtonState application/json 107
+PATCH requests are not supported
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '9925c1f6-25fa-4a2b-955e-8bec7f73e576' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 4.9415ms
+Connection id "0HL3ACH1GPMI1" completed keep alive response.
+Request finished in 8.4069ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/Model/TestModel/TestObject/ButtonState  
+The request path /Model/TestModel/TestObject/ButtonState does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '9e86958e-df80-4e66-a073-aed94546279a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization was successful for user: iks.
+Executing action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore) with arguments (TestModel/TestObject/ButtonState) - ModelState is Valid
+Executed action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Model' in controller 'RESTful'.
+The view 'Model' was found.
+Executing ViewResult, running view at path /Views/RESTful/Model.cshtml.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 3.7261ms
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 13.1338ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/Model/TestModel/TestObject/ButtonState  
+The request path /Model/TestModel/TestObject/ButtonState does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '9e86958e-df80-4e66-a073-aed94546279a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization was successful for user: iks.
+Executing action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore) with arguments (TestModel/TestObject/ButtonState) - ModelState is Valid
+Executed action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Model' in controller 'RESTful'.
+The view 'Model' was found.
+Executing ViewResult, running view at path /Views/RESTful/Model.cshtml.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 4.0033ms
+Connection id "0HL3ACH1GPMI1" completed keep alive response.
+Request finished in 10.7353ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Model/TestModel/TestObject/ButtonState  
+The request path /Model/TestModel/TestObject/ButtonState does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '9e86958e-df80-4e66-a073-aed94546279a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization was successful for user: iks.
+Executing action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore) with arguments (TestModel/TestObject/ButtonState) - ModelState is Valid
+Executed action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Model' in controller 'RESTful'.
+The view 'Model' was found.
+Executing ViewResult, running view at path /Views/RESTful/Model.cshtml.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 4.1572ms
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 10.7185ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Model/TestModel/TestObject/ButtonState  
+The request path /Model/TestModel/TestObject/ButtonState does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '9e86958e-df80-4e66-a073-aed94546279a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization was successful for user: iks.
+Executing action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore) with arguments (TestModel/TestObject/ButtonState) - ModelState is Valid
+Executed action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Model' in controller 'RESTful'.
+The view 'Model' was found.
+Executing ViewResult, running view at path /Views/RESTful/Model.cshtml.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 3.4056ms
+Connection id "0HL3ACH1GPMI1" completed keep alive response.
+Request finished in 9.5867ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Model/TestModel/TestObject/ButtonState  
+The request path /Model/TestModel/TestObject/ButtonState does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name '(null)' and template 'Model/{MName}/{OName}/{PName}'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '9e86958e-df80-4e66-a073-aed94546279a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization was successful for user: iks.
+Executing action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore) with arguments (TestModel/TestObject/ButtonState) - ModelState is Valid
+Executed action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Model' in controller 'RESTful'.
+The view 'Model' was found.
+Executing ViewResult, running view at path /Views/RESTful/Model.cshtml.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 3.3734ms
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 10.2277ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/json 32
+POST requests are not supported
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (, ) - ModelState is Valid
+ 
+UbReadCb
+Hosting shutdown
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE "u"."login" IS NULL AND "u"."password" IS NULL
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Some connections failed to close gracefully during server shutdown.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+A new antiforgery cookie token was created.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Connection id "0HL3ACH1GPMI0" write of "1047" bytes to disconnected client.
+Connection id "0HL3ACH1GPMI0" write of "1035" bytes to disconnected client.
+Connection id "0HL3ACH1GPMI0" write of "518" bytes to disconnected client.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 29627.8084ms
+Connection id "0HL3ACH1GPMI0" write of "5" bytes to disconnected client.
+Connection id "0HL3ACH1GPMI0" completed keep alive response.
+Request finished in 29641.489ms 200 text/html; charset=utf-8
+Connection id "0HL3ACH1GPMI0" disconnecting.
+Connection id "0HL3ACH1GPMI0" write of "0" bytes to disconnected client.
+Compiling query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+Optimized query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Model> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+        FROM "Models" AS "m"
+    , 
+    shaper: BufferedEntityShaper<Model>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+FROM "Models" AS "m"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+Optimized query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Object> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+        FROM "Objects" AS "o"
+    , 
+    shaper: UnbufferedEntityShaper<Object>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+FROM "Objects" AS "o"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+FROM "Objects" AS "o"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+Optimized query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Property> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+        FROM "Properties" AS "p"
+    , 
+    shaper: UnbufferedEntityShaper<Property>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+FROM "Properties" AS "p"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+FROM "Properties" AS "p"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+FROM "Properties" AS "p"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+Optimized query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Script> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+        FROM "Scripts" AS "s"
+    , 
+    shaper: UnbufferedEntityShaper<Script>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+User profile is available. Using 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting starting
+Hosting started
+Connection id "0HL3ACH1GPMI2" started.
+Request starting HTTP/1.1 GET http://37.193.134.174/Login  
+The request path /Login does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+Reading data from file 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys\key-69e4b45a-2c77-42eb-8b74-309af87bc520.xml'.
+Found key {69e4b45a-2c77-42eb-8b74-309af87bc520}.
+Considering key {69e4b45a-2c77-42eb-8b74-309af87bc520} with expiration date 2017-06-06 10:25:42Z as default key.
+Decrypting secret element using Windows DPAPI.
+Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+Using key {69e4b45a-2c77-42eb-8b74-309af87bc520} as the default key.
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Login' and template 'Login'.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id 'bdb19b28-0446-4d97-bfd1-e78ad20787c5' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Login' in controller 'Home'.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' started.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' completed in 10.1414ms.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' completed in 8376.5927ms.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' started.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' completed in 7.7406ms.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' completed in 9549.0457ms.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache miss for view '_Empty' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 5.6683ms.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 2261.2003ms.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 20375.4833ms
+Connection id "0HL3ACH1GPMI2" completed keep alive response.
+Request finished in 20389.5171ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/css/materialize.min.css  
+Connection id "0HL3ACH1GPMI3" started.
+Request starting HTTP/1.1 GET http://37.193.134.174/js/materialize.min.js  
+Connection id "0HL3ACH1GPMI4" started.
+Request starting HTTP/1.1 GET http://37.193.134.174/js/site.js  
+The file /css/materialize.min.css was not modified
+The file /js/site.js was not modified
+The file /js/materialize.min.js was not modified
+Handled. Status code: 304 File: /js/materialize.min.js
+Handled. Status code: 304 File: /css/materialize.min.css
+Connection id "0HL3ACH1GPMI3" completed keep alive response.
+Request finished in 27.2827ms 304 application/javascript
+Connection id "0HL3ACH1GPMI2" completed keep alive response.
+Request finished in 48.2407ms 304 text/css
+An unhandled exception has occurred while executing the request
+Connection id "0HL3ACH1GPMI4" completed keep alive response.
+Request finished in 250.2914ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/js/site.js  
+Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore\wwwroot\js\site.js'
+Connection id "0HL3ACH1GPMI3" completed keep alive response.
+Request finished in 18.7578ms 200 application/javascript
+Connection id "0HL3ACH1GPMI2" received FIN.
+Connection id "0HL3ACH1GPMI5" started.
+Connection id "0HL3ACH1GPMI4" received FIN.
+Connection id "0HL3ACH1GPMI2" disconnecting.
+Connection id "0HL3ACH1GPMI3" received FIN.
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/json 32
+POST requests are not supported
+Connection id "0HL3ACH1GPMI2" sending FIN.
+Request successfully matched the route with name 'Login' and template 'Login'.
+Connection shutdown abnormally
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Connection shutdown abnormally
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (, ) - ModelState is Valid
+Connection id "0HL3ACH1GPMI2" sent FIN with status "0".
+Connection id "0HL3ACH1GPMI2" stopped.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 142.1274ms
+An unhandled exception has occurred while executing the request
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 387.608ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/json 32
+POST requests are not supported
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (, ) - ModelState is Valid
+ 
+Compiling query model: 
+'(from User u in DbSet<User>
+where u.login == __login_0 && u.password == __password_1
+select u)
+.FirstOrDefault()'
+Optimized query model: 
+'(from User u in DbSet<User>
+where u.login == __login_0 && u.password == __password_1
+select u)
+.FirstOrDefault()'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<User> _ToSequence(
+    element: User FirstOrDefault(
+        source: IEnumerable<User> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT "u"."id", "u"."login", "u"."password"
+                FROM "Users" AS "u"
+                WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+                LIMIT 1
+            , 
+            shaper: UnbufferedEntityShaper<User>
+        )
+    )
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE "u"."login" IS NULL AND "u"."password" IS NULL
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+A new antiforgery cookie token was created.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 71.7954ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 87.2209ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Model  
+The request path /Model does not match a supported file type
+Request successfully matched the route with name '(null)' and template 'Model'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '3d7fb620-edb8-49be-957d-1e480fcab0e3' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization failed for user: (null).
+Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Executing ChallengeResult with authentication schemes ().
+AuthenticationScheme: session was challenged.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 2.5897ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 10.5076ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/?ReturnUrl=%2FModel  
+The request path / does not match a supported file type
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id 'bdb19b28-0446-4d97-bfd1-e78ad20787c5' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+A new antiforgery cookie token was created.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 6.1372ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 10.4899ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/json 32
+POST requests are not supported
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (, ) - ModelState is Valid
+ 
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE "u"."login" IS NULL AND "u"."password" IS NULL
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+A new antiforgery cookie token was created.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 11.6824ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 35.1121ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Model  
+The request path /Model does not match a supported file type
+Request successfully matched the route with name '(null)' and template 'Model'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '3d7fb620-edb8-49be-957d-1e480fcab0e3' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization failed for user: (null).
+Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Executing ChallengeResult with authentication schemes ().
+AuthenticationScheme: session was challenged.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 6.5435ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 32.1598ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/?ReturnUrl=%2FModel  
+The request path / does not match a supported file type
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id 'bdb19b28-0446-4d97-bfd1-e78ad20787c5' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+A new antiforgery cookie token was created.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 5.2704ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 9.6553ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Model  
+The request path /Model does not match a supported file type
+Request successfully matched the route with name '(null)' and template 'Model'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '3d7fb620-edb8-49be-957d-1e480fcab0e3' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization failed for user: (null).
+Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Executing ChallengeResult with authentication schemes ().
+AuthenticationScheme: session was challenged.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 2.5817ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 8.2921ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/?ReturnUrl=%2FModel  
+The request path / does not match a supported file type
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id 'bdb19b28-0446-4d97-bfd1-e78ad20787c5' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 6.1059ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 10.0374ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Model  
+The request path /Model does not match a supported file type
+Request successfully matched the route with name '(null)' and template 'Model'.
+Action 'IOPTCore.Controllers.RESTfulController.Model (IOPTCore)' with id '3d7fb620-edb8-49be-957d-1e480fcab0e3' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+No actions matched the current request
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization failed for user: (null).
+Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Executing ChallengeResult with authentication schemes ().
+AuthenticationScheme: session was challenged.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 2.4866ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 8.4358ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/?ReturnUrl=%2FModel  
+The request path / does not match a supported file type
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id 'bdb19b28-0446-4d97-bfd1-e78ad20787c5' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 6.788ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 12.2744ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Login  
+The request path /Login does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Login' and template 'Login'.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id 'bdb19b28-0446-4d97-bfd1-e78ad20787c5' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 12.83ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 49.728ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Login  
+The request path /Login does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Login' and template 'Login'.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id 'bdb19b28-0446-4d97-bfd1-e78ad20787c5' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 6.4628ms
+Connection id "0HL3ACH1GPMI5" completed keep alive response.
+Request finished in 16.1592ms 200 text/html; charset=utf-8
+Compiling query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+Optimized query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Model> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+        FROM "Models" AS "m"
+    , 
+    shaper: BufferedEntityShaper<Model>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (255ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+FROM "Models" AS "m"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+Optimized query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Object> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+        FROM "Objects" AS "o"
+    , 
+    shaper: UnbufferedEntityShaper<Object>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (59ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+FROM "Objects" AS "o"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+Optimized query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Property> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+        FROM "Properties" AS "p"
+    , 
+    shaper: UnbufferedEntityShaper<Property>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+FROM "Properties" AS "p"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+Optimized query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Script> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+        FROM "Scripts" AS "s"
+    , 
+    shaper: UnbufferedEntityShaper<Script>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+User profile is available. Using 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting starting
+Hosting started
+Connection id "0HL3B49MH4V38" started.
+Connection id "0HL3B49MH4V3A" started.
+Connection id "0HL3B49MH4V39" started.
+Request starting HTTP/1.1 GET http://37.193.134.174/  
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/  
+Request starting HTTP/1.1 DEBUG http://192.168.1.102:1025/  0
+The request path / does not match a supported file type
+The request path / does not match a supported file type
+Connection id "0HL3B49MH4V38" completed keep alive response.
+Request finished in 1333.356ms 200 
+Request successfully matched the route with name 'default' and template ''.
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '3a3fe3aa-9393-47b1-9b15-b9209f0cf7e2' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '3a3fe3aa-9393-47b1-9b15-b9209f0cf7e2' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Login' in controller 'Home'.
+View lookup cache miss for view 'Login' in controller 'Home'.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' started.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' completed in 529.1787ms.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' completed in 7001.2969ms.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' started.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' completed in 5.4602ms.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' completed in 1971.9796ms.
+The view 'Login' was found.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Reading data from file 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys\key-69e4b45a-2c77-42eb-8b74-309af87bc520.xml'.
+Found key {69e4b45a-2c77-42eb-8b74-309af87bc520}.
+Considering key {69e4b45a-2c77-42eb-8b74-309af87bc520} with expiration date 2017-06-06 10:25:42Z as default key.
+Decrypting secret element using Windows DPAPI.
+Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+Using key {69e4b45a-2c77-42eb-8b74-309af87bc520} as the default key.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+A new antiforgery cookie token was created.
+A new antiforgery cookie token was created.
+View lookup cache miss for view '_Empty' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+View lookup cache miss for view '_Empty' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 95.7704ms.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 2139.461ms.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 14666.3869ms
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 14667.0815ms
+Connection id "0HL3B49MH4V39" completed keep alive response.
+Request finished in 17110.3896ms 200 text/html; charset=utf-8
+Connection id "0HL3B49MH4V3A" completed keep alive response.
+Request finished in 17111.185ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/css/materialize.min.css  
+Request starting HTTP/1.1 GET http://37.193.134.174/css/materialize.min.css  
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/js/materialize.min.js  
+The file /css/materialize.min.css was not modified
+The file /js/materialize.min.js was not modified
+The file /css/materialize.min.css was not modified
+Handled. Status code: 304 File: /css/materialize.min.css
+Handled. Status code: 304 File: /css/materialize.min.css
+Connection id "0HL3B49MH4V39" completed keep alive response.
+Handled. Status code: 304 File: /js/materialize.min.js
+Connection id "0HL3B49MH4V38" completed keep alive response.
+Connection id "0HL3B49MH4V3A" completed keep alive response.
+Request finished in 171.4315ms 304 text/css
+Request starting HTTP/1.1 GET http://37.193.134.174/js/materialize.min.js  
+Request finished in 43.1261ms 304 application/javascript
+The file /js/materialize.min.js was not modified
+Request starting HTTP/1.1 GET http://37.193.134.174/js/site.js  
+Handled. Status code: 304 File: /js/materialize.min.js
+Connection id "0HL3B49MH4V38" completed keep alive response.
+The file /js/site.js was not modified
+Handled. Status code: 304 File: /js/site.js
+Request finished in 45.176ms 304 application/javascript
+Connection processing ended abnormally
+Connection id "0HL3B49MH4V39" disconnecting.
+Connection id "0HL3B49MH4V39" sending FIN.
+Connection id "0HL3B49MH4V39" sent FIN with status "0".
+Request starting HTTP/1.1 GET http://192.168.1.102:1025/js/site.js  
+Request finished in 148.1054ms 304 application/javascript
+The file /js/site.js was not modified
+Connection id "0HL3B49MH4V39" stopped.
+Handled. Status code: 304 File: /js/site.js
+Connection processing ended abnormally
+Connection id "0HL3B49MH4V3A" disconnecting.
+Connection id "0HL3B49MH4V3A" sending FIN.
+Connection id "0HL3B49MH4V38" completed keep alive response.
+Request finished in 8.6574ms 304 application/javascript
+Request starting HTTP/1.1 GET http://37.193.134.174/fonts/roboto/Roboto-Regular.woff2  
+The file /fonts/roboto/Roboto-Regular.woff2 was not modified
+Handled. Status code: 304 File: /fonts/roboto/Roboto-Regular.woff2
+Connection id "0HL3B49MH4V38" completed keep alive response.
+Hosting shutdown
+Request finished in 78.3543ms 304 application/font-woff2
+Connection id "0HL3B49MH4V38" disconnecting.
+Connection id "0HL3B49MH4V38" sending FIN.
+Connection id "0HL3B49MH4V38" sent FIN with status "0".
+Connection id "0HL3B49MH4V38" stopped.
+Compiling query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+Optimized query model: 
+'from Model <generated>_0 in DbSet<Model>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Model> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+        FROM "Models" AS "m"
+    , 
+    shaper: BufferedEntityShaper<Model>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "m"."id", "m"."Userid", "m"."name", "m"."pathUnit"
+FROM "Models" AS "m"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+Optimized query model: 
+'from Object <generated>_0 in DbSet<Object>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Object> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+        FROM "Objects" AS "o"
+    , 
+    shaper: UnbufferedEntityShaper<Object>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+FROM "Objects" AS "o"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "o"."id", "o"."modelId", "o"."name", "o"."pathUnit"
+FROM "Objects" AS "o"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+Optimized query model: 
+'from Property <generated>_0 in DbSet<Property>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Property> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+        FROM "Properties" AS "p"
+    , 
+    shaper: UnbufferedEntityShaper<Property>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+FROM "Properties" AS "p"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+FROM "Properties" AS "p"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."id", "p"."name", "p"."objectId", "p"."pathUnit", "p"."type", "p"."value"
+FROM "Properties" AS "p"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Compiling query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+Optimized query model: 
+'from Script <generated>_0 in DbSet<Script>
+select <generated>_0'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<Script> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+        FROM "Scripts" AS "s"
+    , 
+    shaper: UnbufferedEntityShaper<Script>
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."id", "s"."name", "s"."pathUnit", "s"."propertyId", "s"."value"
+FROM "Scripts" AS "s"
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+User profile is available. Using 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting starting
+Hosting started
+Connection id "0HL3B49MH4V3B" started.
+Request starting HTTP/1.1 GET http://37.193.134.174/Login  
+The request path /Login does not match a supported file type
+Request successfully matched the route with name 'Login' and template 'Login'.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '7e851f1c-f9e2-415b-91c6-b0f44c3884ec' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Login' in controller 'Home'.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' started.
+Code generation for the Razor file at '/Views/Home/Login.cshtml' completed in 13.7649ms.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Home/Login.cshtml' completed in 2011.0516ms.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' started.
+Code generation for the Razor file at '/Views/_ViewStart.cshtml' completed in 4.0606ms.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' completed in 1950.2216ms.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Reading data from file 'C:\Users\iks\AppData\Local\ASP.NET\DataProtection-Keys\key-69e4b45a-2c77-42eb-8b74-309af87bc520.xml'.
+Found key {69e4b45a-2c77-42eb-8b74-309af87bc520}.
+Considering key {69e4b45a-2c77-42eb-8b74-309af87bc520} with expiration date 2017-06-06 10:25:42Z as default key.
+Decrypting secret element using Windows DPAPI.
+Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+Using key {69e4b45a-2c77-42eb-8b74-309af87bc520} as the default key.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache miss for view '_Empty' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+Code generation for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 5.6133ms.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Empty.cshtml' completed in 1981.0747ms.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 6135.5002ms
+Connection id "0HL3B49MH4V3B" completed keep alive response.
+Request finished in 6166.2917ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/json 32
+POST requests are not supported
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (, ) - ModelState is Valid
+ 
+Compiling query model: 
+'(from User u in DbSet<User>
+where u.login == __login_0 && u.password == __password_1
+select u)
+.FirstOrDefault()'
+Optimized query model: 
+'(from User u in DbSet<User>
+where u.login == __login_0 && u.password == __password_1
+select u)
+.FirstOrDefault()'
+TRACKED: True
+(QueryContext queryContext) => IEnumerable<User> _ToSequence(
+    element: User FirstOrDefault(
+        source: IEnumerable<User> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT "u"."id", "u"."login", "u"."password"
+                FROM "Users" AS "u"
+                WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+                LIMIT 1
+            , 
+            shaper: UnbufferedEntityShaper<User>
+        )
+    )
+)
+
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (87ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE "u"."login" IS NULL AND "u"."password" IS NULL
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 370.908ms
+Connection id "0HL3B49MH4V3B" completed keep alive response.
+Request finished in 380.7849ms 200 text/html; charset=utf-8
+Connection id "0HL3B49MH4V3B" received FIN.
+Connection id "0HL3B49MH4V3C" started.
+Connection id "0HL3B49MH4V3B" disconnecting.
+Connection id "0HL3B49MH4V3B" sending FIN.
+Connection id "0HL3B49MH4V3B" sent FIN with status "0".
+Connection id "0HL3B49MH4V3B" stopped.
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/x-www-form-urlencoded 213
+POST requests are not supported
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (iks, 123) - ModelState is Valid
+iks 123
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (17ms) [Parameters=[@__login_0='?', @__password_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+AuthenticationScheme: session signed in.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+Executing RedirectResult, redirecting to /Main.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 183.4619ms
+Connection id "0HL3B49MH4V3C" completed keep alive response.
+Request finished in 280.9841ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/Main  
+The request path /Main does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Main' and template 'Main'.
+Executing action IOPTCore.Controllers.HomeController.Index (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Index (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Index (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Index' in controller 'Home'.
+Code generation for the Razor file at '/Views/Home/Index.cshtml' started.
+Code generation for the Razor file at '/Views/Home/Index.cshtml' completed in 104.1903ms.
+Compilation of the generated code for the Razor file at '/Views/Home/Index.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/Home/Index.cshtml' completed in 2281.2603ms.
+The view 'Index' was found.
+Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+View lookup cache miss for view '_Layout' in controller 'Home'.
+Code generation for the Razor file at '/Views/Shared/_Layout.cshtml' started.
+Code generation for the Razor file at '/Views/Shared/_Layout.cshtml' completed in 72.4032ms.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Layout.cshtml' started.
+Connection id "0HL3B49MH4V3D" started.
+Compilation of the generated code for the Razor file at '/Views/Shared/_Layout.cshtml' completed in 2201.5614ms.
+Request starting HTTP/1.1 POST http://37.193.134.174/Login application/x-www-form-urlencoded 213
+POST requests are not supported
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (iks, 123) - ModelState is Valid
+iks 123
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (0ms) [Parameters=[@__login_0='?', @__password_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+AuthenticationScheme: session signed in.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+Executing RedirectResult, redirecting to /Main.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 6.6378ms
+Connection id "0HL3B49MH4V3D" completed keep alive response.
+Request finished in 11.2256ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/Main  
+The request path /Main does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Main' and template 'Main'.
+Executing action IOPTCore.Controllers.HomeController.Index (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Index (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Index (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Index' in controller 'Home'.
+The view 'Index' was found.
+Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+View lookup cache hit for view '_Layout' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Index (IOPTCore) in 4980.6258ms
+Connection id "0HL3B49MH4V3C" completed keep alive response.
+Executed action IOPTCore.Controllers.HomeController.Index (IOPTCore) in 64.0892ms
+Request finished in 4994.3493ms 200 text/html; charset=utf-8
+Request finished in 114.9271ms 200 text/html; charset=utf-8
+Connection processing ended abnormally
+Connection id "0HL3B49MH4V3D" disconnecting.
+Connection id "0HL3B49MH4V3D" sending FIN.
+Connection id "0HL3B49MH4V3D" sent FIN with status "0".
+Connection id "0HL3B49MH4V3C" reset.
+Connection id "0HL3B49MH4V3D" stopped.
+Connection id "0HL3B49MH4V3C" disconnecting.
+Connection id "0HL3B49MH4V3C" sending FIN.
+Connection id "0HL3B49MH4V3C" sent FIN with status "0".
+Connection id "0HL3B49MH4V3C" disconnecting.
+Connection id "0HL3B49MH4V3C" write of "0" bytes to disconnected client.
+Connection id "0HL3B49MH4V3C" stopped.
+Connection id "0HL3B49MH4V3E" started.
+Request starting HTTP/1.1 GET http://37.193.134.174/css/site.css  
+The file /css/site.css was not modified
+Handled. Status code: 304 File: /css/site.css
+Connection id "0HL3B49MH4V3E" completed keep alive response.
+Request finished in 1.7676ms 304 text/css
+Request starting HTTP/1.1 GET http://37.193.134.174/js/site.js?v=qyreEsargf4bEnJ5_DFPb2Jp8ac8Fa91SkV3yU6_Cck  
+The file /js/site.js was not modified
+Handled. Status code: 304 File: /js/site.js
+Connection id "0HL3B49MH4V3E" completed keep alive response.
+Request finished in 2.6643ms 304 application/javascript
+Connection id "0HL3B49MH4V3E" received FIN.
+Connection id "0HL3B49MH4V3E" disconnecting.
+Connection id "0HL3B49MH4V3E" sending FIN.
+Connection id "0HL3B49MH4V3E" sent FIN with status "0".
+Connection id "0HL3B49MH4V3E" stopped.
+Connection id "0HL3B49MH4V3F" started.
+Request starting HTTP/1.1 POST http://37.193.134.174/Login?login=iks&password=123 application/json 0
+POST requests are not supported
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (iks, 123) - ModelState is Valid
+iks 123
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[@__login_0='?', @__password_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+AuthenticationScheme: session signed in.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+Executing RedirectResult, redirecting to /Main.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 118.1475ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 133.7516ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/Main application/json 
+The request path /Main does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Main' and template 'Main'.
+Executing action IOPTCore.Controllers.HomeController.Index (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Index (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Index (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Index' in controller 'Home'.
+The view 'Index' was found.
+Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+View lookup cache hit for view '_Layout' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Index (IOPTCore) in 3.4075ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 8.4488ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/  
+The request path / does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '7e851f1c-f9e2-415b-91c6-b0f44c3884ec' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 12.3658ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 36.1318ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/main  
+The request path /main does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Main' and template 'Main'.
+Executing action IOPTCore.Controllers.HomeController.Index (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Index (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Index (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Index' in controller 'Home'.
+The view 'Index' was found.
+Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+View lookup cache hit for view '_Layout' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Index (IOPTCore) in 3.9935ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 10.1792ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Model/TestModel  
+The request path /Model/TestModel does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization was successful for user: iks.
+Executing action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore) with arguments (TestModel) - ModelState is Valid
+Executed action method IOPTCore.Controllers.RESTfulController.Model (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache miss for view 'Model' in controller 'RESTful'.
+Code generation for the Razor file at '/Views/RESTful/Model.cshtml' started.
+Code generation for the Razor file at '/Views/RESTful/Model.cshtml' completed in 8.8668ms.
+Compilation of the generated code for the Razor file at '/Views/RESTful/Model.cshtml' started.
+Compilation of the generated code for the Razor file at '/Views/RESTful/Model.cshtml' completed in 2049.9365ms.
+The view 'Model' was found.
+Executing ViewResult, running view at path /Views/RESTful/Model.cshtml.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 2319.0312ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 2324.6099ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Logout  
+The request path /Logout does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Logout' and template 'Logout'.
+Executing action IOPTCore.Controllers.HomeController.Logout (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Logout (IOPTCore) with arguments ((null)) - ModelState is Valid
+AuthenticationScheme: session signed out.
+Executed action method IOPTCore.Controllers.HomeController.Logout (IOPTCore), returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+Executing RedirectResult, redirecting to /.
+Executed action IOPTCore.Controllers.HomeController.Logout (IOPTCore) in 16.4055ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 21.4123ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/  
+The request path / does not match a supported file type
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '7e851f1c-f9e2-415b-91c6-b0f44c3884ec' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 4.3438ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 8.4633ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/main  
+The request path /main does not match a supported file type
+Request successfully matched the route with name 'Main' and template 'Main'.
+Executing action IOPTCore.Controllers.HomeController.Index (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Index (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Index (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Index' in controller 'Home'.
+The view 'Index' was found.
+Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+View lookup cache hit for view '_Layout' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Index (IOPTCore) in 3.1896ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 9.4682ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://37.193.134.174/Model/TestModel  
+The request path /Model/TestModel does not match a supported file type
+Request successfully matched the route with name 'Model' and template 'Model/{*route}'.
+Executing action IOPTCore.Controllers.RESTfulController.Model (IOPTCore)
+Authorization failed for user: (null).
+Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Executing ChallengeResult with authentication schemes ().
+AuthenticationScheme: session was challenged.
+Executed action IOPTCore.Controllers.RESTfulController.Model (IOPTCore) in 26.1159ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 28.7872ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/?ReturnUrl=%2FModel%2FTestModel  
+The request path / does not match a supported file type
+Request successfully matched the route with name 'default' and template ''.
+Action 'IOPTCore.Controllers.HomeController.Login (IOPTCore)' with id '7e851f1c-f9e2-415b-91c6-b0f44c3884ec' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Login' in controller 'Home'.
+The view 'Login' was found.
+Executing ViewResult, running view at path /Views/Home/Login.cshtml.
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+An antiforgery cookie token was reused.
+View lookup cache hit for view '_Empty' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 7.7084ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 13.7328ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://37.193.134.174/Login?login=iks&password=123 application/json 0
+POST requests are not supported
+Request successfully matched the route with name 'Login' and template 'Login'.
+Executing action IOPTCore.Controllers.HomeController.Login (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Login (IOPTCore) with arguments (iks, 123) - ModelState is Valid
+iks 123
+Opening connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Executed DbCommand (1ms) [Parameters=[@__login_0='?', @__password_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT "u"."id", "u"."login", "u"."password"
+FROM "Users" AS "u"
+WHERE ("u"."login" = @__login_0) AND ("u"."password" = @__password_1)
+LIMIT 1
+Closing connection to database 'IOPT' on server 'tcp://localhost:5432'.
+Performing protect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+AuthenticationScheme: session signed in.
+Executed action method IOPTCore.Controllers.HomeController.Login (IOPTCore), returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+Executing RedirectResult, redirecting to /Main.
+Executed action IOPTCore.Controllers.HomeController.Login (IOPTCore) in 5.7341ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 8.4973ms 302 
+Request starting HTTP/1.1 GET http://37.193.134.174/Main application/json 
+The request path /Main does not match a supported file type
+Performing unprotect operation to key {69e4b45a-2c77-42eb-8b74-309af87bc520} with purposes ('C:\Users\iks\Documents\Visual Studio 2015\Projects\IOPTCore\src\IOPTCore', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'session', 'v2').
+HttpContext.User merged via AutomaticAuthentication from authenticationScheme: session.
+Request successfully matched the route with name 'Main' and template 'Main'.
+Executing action IOPTCore.Controllers.HomeController.Index (IOPTCore)
+Executing action method IOPTCore.Controllers.HomeController.Index (IOPTCore) with arguments ((null)) - ModelState is Valid
+Executed action method IOPTCore.Controllers.HomeController.Index (IOPTCore), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+View lookup cache hit for view 'Index' in controller 'Home'.
+The view 'Index' was found.
+Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+View lookup cache hit for view '_Layout' in controller 'Home'.
+Executed action IOPTCore.Controllers.HomeController.Index (IOPTCore) in 2.7945ms
+Connection id "0HL3B49MH4V3F" completed keep alive response.
+Request finished in 5.8157ms 200 text/html; charset=utf-8
+Connection id "0HL3B49MH4V3F" disconnecting.
+Connection id "0HL3B49MH4V3F" sending FIN.
+Connection id "0HL3B49MH4V3F" sent FIN with status "0".
+Connection id "0HL3B49MH4V3F" stopped.

@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Редактирование";
+    Layout = "_Layout";
+}
+
+<div class="row" style="margin-left: 30%;margin-top: 10%">
+    @if ((string)ViewData["type"] == ("model"))
+    {
+
+        <form class="col s12 m6" action="~/Model/@ViewData["path"]" method="put">
+            <div class="row">
+                <label class="light-green-text" style="font-size:2rem;">ИД:</label><br>
+                <label class="light-green-text" style="font-size:1.2rem;">@ViewBag.Fields[0]</label>
+            </div>
+            <label class="light-green-text" style="font-size:2rem;">Название</label>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input disabled id="Name" value="@ViewBag.Fields[1]" type="text" class="validate">
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light light-green" type="submit" name="action" align="center">
+                Отправить
+            </button>
+        </form>
+
+
+    }
+    else if ((string)ViewData["type"] == ("object"))
+    {
+
+        <form class="col s12 m6" action="~/Model/@ViewData["path"]" method="put">
+            <div class="row">
+                <label class="light-green-text" style="font-size:2rem;">ИД:</label><br>
+                <label class="light-green-text" style="font-size:1.2rem;">@ViewBag.Fields[0]</label>
+            </div>
+            <label class="light-green-text" style="font-size:2rem;">Название</label>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input disabled id="Name" value="@ViewBag.Fields[1]" type="text" class="validate">
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light light-green" type="submit" name="action" align="center">
+                Отправить
+            </button>
+        </form>
+
+    }
+    else if ((string)ViewData["type"] == ("property"))
+    {
+
+        <form class="col m12" action="~/Model/@ViewData["path"]" method="put">
+            <div class="row">
+                <label class="light-green-text" style="font-size:2rem;">ИД:</label><br>
+                <label class="light-green-text" style="font-size:1.2rem;">@ViewBag.Fields[0]</label>
+            </div>
+            <label class="light-green-text" style="font-size:2rem;">Название</label>
+            <div class="row">
+
+                <div class="input-field col m12">
+                    <input disabled id="Name" value="@ViewBag.Fields[1]" type="text" class="validate">
+                </div>
+            </div>
+            <label class="light-green-text" style="font-size:2rem;">Тип</label>
+            <div class="row">
+                <div class="input-field col m12">
+                    <select name="Type" style="display: flex">
+                        @*<option value="" selected >Выберите тип</option>*@
+                        <option value="18">String</option>@*@(ViewBag.Fields[2] == "18" ? "selected" : "")*@
+                        <option value="14">Double</option>
+                        <option value="9">Integer</option>
+                        <option value="3">Boolean</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="row">
+                <label class="light-green-text" style="font-size:2rem;">Значение</label>
+                <div class="input-field col m12">
+                    <input id="Value" value="@ViewBag.Fields[3]" type="text" class="validate">
+
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light light-green" type="submit" name="action" align="center">
+                Отправить
+            </button>
+        </form>
+
+    }
+    else if ((string)ViewData["type"] == ("script"))
+    {
+
+        <form class="col m12" action="~/Model/@ViewData["path"]" method="put">
+            <div class="row">
+                <label class="light-green-text" style="font-size:2rem;">ИД:</label><br>
+                <label class="light-green-text" style="font-size:1.2rem;">@ViewBag.Fields[0]</label>
+            </div>
+            <label class="light-green-text" style="font-size:2rem;">Название</label>
+            <div class="row">
+                <div class="input-field col m12">
+                    <input disabled id="Name" value="@ViewBag.Fields[1]" type="text" class="validate">
+                </div>
+            </div>
+            <div class="row">
+                <label for="Value" class="light-green-text" style="font-size:2rem;">Скрипт</label>
+                <div class="input-field col m12">
+                    <input id="Value" value="@ViewBag.Fields[2]" type="text" class="validate">
+
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light light-green" type="submit" name="action" align="center">
+                Отправить
+            </button>
+        </form>
+
+    }
+</div>

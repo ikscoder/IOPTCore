@@ -1,0 +1,26 @@
+﻿@model IEnumerable<IOPTCore.Models.Model>
+@{
+    ViewData["Title"] = "Главная";
+    Layout = "_Layout";
+}
+
+@try
+{
+                @foreach (var m in ViewBag.snapModels)
+                {
+                        <div><h2>@m.name <a class="btn-floating waves-effect waves-light light-green" href="~/Model/@m.pathUnit"><i class="material-icons">code</i></a></h2></div>
+                            @foreach (var o in m.objects)
+                            {
+                                <div style="margin-left:50px"><h3>@o.name <a class="btn-floating waves-effect waves-light light-green" href="~/Model/@m.pathUnit/@o.pathUnit"><i class="material-icons">code</i></a></h3></div>
+                                        @foreach (var p in o.properties)
+                                        {
+                                            <div style="margin-left:100px"><h4>@p.name <a class="btn-floating waves-effect waves-light light-green" href="~/Model/@m.pathUnit/@o.pathUnit/@p.pathUnit"><i class="material-icons">code</i></a></h4></div>
+                                                    @foreach (var s in p.scripts)
+                                                    {
+                                                        <div style="margin-left:150px"><h5>@s.name <a class="btn-floating waves-effect waves-light light-green" href="~/Model/@m.pathUnit/@o.pathUnit/@p.pathUnit/@s.pathUnit"><i class="material-icons">code</i></a></h5></div>
+                                                    }
+                                        }
+                            }
+                }
+    }
+    catch { }

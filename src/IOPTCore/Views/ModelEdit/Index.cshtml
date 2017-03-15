@@ -1,0 +1,73 @@
+﻿@model IEnumerable<IOPTCore.Models.Model>
+@{
+    ViewData["Title"] = "Дерево моделей";
+    Layout = "_Layout";
+    //int minterval = 100 / (Model.Count() + 1);
+    //int ointerval = 100 / (Model.SelectMany(x => x.Objects).Count());
+    //int pinterval = 100 / (Model.SelectMany(x => x.Objects).SelectMany(y=>y.Properties).Count())+2;
+    //int sinterval = 100 / (Model.SelectMany(x => x.Objects).SelectMany(y => y.Properties).SelectMany(z => z.Scripts).Count());
+    //int mcounter = 0;
+    //int ocounter = 0;
+    //int pcounter = 0;
+    //int scounter = 0;
+}
+@foreach (var m in Model)
+{
+    @*mcounter += minterval;
+        <div style="position: absolute; padding: 4px; background: #8bc34a; left: @mcounter%;top: 80px"><a style="color: #fff;" href="Model/@m.Id">@m.Name</a></div>
+
+        @foreach (var o in m.Objects)
+        {
+            ocounter += ointerval;
+            <div style="position: absolute; padding: 4px; background: #8bc34a; left: @ocounter%;top: 140px">
+                <a style="color: #fff;" href="Model/@m.Id/@o.Id">@o.Name</a>
+            </div>
+
+            @foreach (var p in o.Properties)
+            {
+
+                <div style="position: absolute; padding: 4px; background: #8bc34a; left: @pcounter%;top: 200px">
+                    <a style="color: #fff;" href="Model/@m.Id/@o.Id/@p.Id">@p.Name</a>
+                </div>
+                pcounter += pinterval;
+                @foreach (var s in p.Scripts)
+                {
+
+                    <div style="position: absolute; padding: 4px; background: #8bc34a; left: @scounter%;top: 260px">
+                        <p style="color: #fff;">@s.Name</p>
+                    </div>
+                    scounter += sinterval;
+                }
+
+            }
+
+        }
+        <br><br><br><br><br><br><br><br><br>*@
+    <div style="color: #fff; padding: 4px; background: #8bc34a; margin-left: 40px; margin-top: 10px;width:300px;" align="center"><p>@m.Name <a href="Model/@m.Id">API</a> <a href="View/@m.Id">View</a></p></div>
+    <div style="border: solid; margin-left: 40px; border-width: 1px; border-color:forestgreen">
+        @foreach (var o in m.Objects)
+        {
+            <div style="color: #fff; padding: 4px; background: #8bc34a; margin-left: 80px; margin-top: 8px;width:300px">
+                <p>@o.Name <a href="Model/@m.Id/@o.Id">API</a> <a href="View/@m.Id/@o.Id">View</a></p>
+            </div>
+            <div style="border: solid; margin-left: 80px; border-width: 1px; border-color:forestgreen">
+                @foreach (var p in o.Properties)
+                {
+                    <div style="color: #fff; padding: 4px; background: #8bc34a; margin-left: 120px; margin-top: 6px;width:300px">
+                        <p>@p.Name <a href="Model/@m.Id/@o.Id/@p.Id">API</a> <a href="View/@m.Id/@o.Id/@p.Id">View</a></p>
+                    </div>
+                    <div style="border: solid; margin-left: 120px; border-width: 1px; border-color:forestgreen">
+                        @foreach (var s in p.Scripts)
+                        {
+                            <div style="color: #fff; padding: 4px; background: #8bc34a; margin-left: 160px; margin-top: 4px;width:300px">
+                                <p>@s.Name <a href="View/@m.Id/@o.Id/@p.Id/@s.Id">View</a></p>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        }
+    </div>
+}
+
+
